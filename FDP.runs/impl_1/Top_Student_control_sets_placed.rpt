@@ -1,0 +1,94 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Mar  8 04:26:46 2025
+| Host         : NeerajPC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    23 |
+| Unused register locations in slices containing registers |    44 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      6 |            1 |
+|      8 |            1 |
+|     10 |            2 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |           15 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              74 |           24 |
+| No           | No                    | Yes                    |              54 |            8 |
+| No           | Yes                   | No                     |             570 |           82 |
+| Yes          | No                    | No                     |             118 |           15 |
+| Yes          | No                    | Yes                    |              50 |           11 |
+| Yes          | Yes                   | No                     |              10 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+----------------------------+--------------------------------------------------+------------------+----------------+
+|    Clock Signal   |        Enable Signal       |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-------------------+----------------------------+--------------------------------------------------+------------------+----------------+
+|  clk1khz_BUFG     |                            | subtask_reset                                    |                1 |              2 |
+| ~clk6p25m_BUFG    |                            |                                                  |                2 |              4 |
+|  clk1khz_BUFG     | SubTaskA/down_prev         |                                                  |                1 |              6 |
+|  clk_IBUF_BUFG    | square_movement/p_0_in     |                                                  |                1 |              8 |
+|  Clock_25_MHz/CLK |                            |                                                  |                4 |             10 |
+|  clk1khz_BUFG     | SubTaskA/debounce_counter0 | SubTaskA/debounce_counter[7]_i_1_n_0             |                2 |             10 |
+|  clk_IBUF_BUFG    | square_movement/green_y_0  | btnC_IBUF                                        |                4 |             12 |
+|  clk_IBUF_BUFG    | square_movement/green_x_1  | btnC_IBUF                                        |                3 |             14 |
+|  clk_IBUF_BUFG    |                            |                                                  |                8 |             22 |
+|  clk1khz_BUFG     | SubTaskA/outerDiameter     | subtask_reset                                    |                4 |             24 |
+| ~clk6p25m_BUFG    |                            | oled/frame_counter[16]_i_1_n_0                   |                4 |             32 |
+|  clk1khz_BUFG     |                            |                                                  |               10 |             38 |
+| ~clk6p25m_BUFG    | oled/delay[0]_i_1_n_0      |                                                  |                5 |             40 |
+|  clk_IBUF_BUFG    |                            | btnC_IBUF                                        |                7 |             52 |
+| ~clk6p25m_BUFG    | oled/state                 |                                                  |                8 |             64 |
+|  clk_IBUF_BUFG    |                            | select_frequency/Clock_10_Hz/count[0]_i_1__0_n_0 |                8 |             64 |
+|  clk_IBUF_BUFG    |                            | select_frequency/Clock_1_Hz/count[0]_i_1__1_n_0  |                8 |             64 |
+|  clk_IBUF_BUFG    |                            | select_frequency/Clock_5_Hz/clear                |                8 |             64 |
+|  clk_IBUF_BUFG    |                            | Clock_1_kHz/clear                                |                8 |             64 |
+|  clk_IBUF_BUFG    |                            | Clock_25_MHz/clear                               |                8 |             64 |
+|  clk_IBUF_BUFG    |                            | Clock_6_25_MHz/clear                             |                8 |             64 |
+|  clk_IBUF_BUFG    |                            | select_frequency/Clock_8_Hz/count[0]_i_1__2_n_0  |                8 |             64 |
+| ~clk6p25m_BUFG    |                            | oled/spi_word[39]_i_1_n_0                        |               22 |             90 |
++-------------------+----------------------------+--------------------------------------------------+------------------+----------------+
+
+

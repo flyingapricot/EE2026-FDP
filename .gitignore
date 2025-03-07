@@ -1,0 +1,157 @@
+# Created by https://www.toptal.com/developers/gitignore/api/xilinx,xilinxvivado
+# Edit at https://www.toptal.com/developers/gitignore?templates=xilinx,xilinxvivado
+
+### Xilinx and XilinxVivado ###
+
+# Exclude all
+*
+!*/
+!.gitignore
+
+# Source files: Do NOT ignore VHDL, Verilog, block diagrams, or EDIF files.
+!*.vhd
+!*.v
+!*.sv
+!*.bd
+!*.edif
+
+# IP files
+!*.xci
+!*.xcix
+!*.dcp
+!*.vds
+!*.pb
+
+# System Generator
+!*.mdl
+!*.slx
+!*.bxml
+
+# Simulation logic analyzer
+!*.wcfg
+!*.coe
+
+# MIG
+!*.prj
+!*.mem
+
+# Project files
+!*.xpr
+!*.xml
+
+# Constraint files
+!*.xdc
+
+# TCL files
+!*.tcl
+
+# Journal files
+!*.jou
+
+# Reports
+!*.rpt
+!*.txt
+!*.vdi
+
+# C files
+!*.c
+!*.h
+!*.elf
+!*.bmm
+!*.xmp
+
+# Home directory files
+*.log
+*.debug
+*.str
+*.zip
+*.tmp
+*.rst
+*.os
+*.js
+*.hwdef
+*.veo
+*.wdf
+*.vdi
+*.dmp
+*.rpx
+*_stub.v
+*_stub.vhdl
+*_funcsim.v
+*_funcsim.vhdl
+.project
+
+# Directory files
+*.cache
+.metadata
+*.data
+*.ipdefs
+.Xil
+*.sdk
+*.hw
+*.ip_user_files
+
+# IP synthesis
+*_synth_*
+.jobs
+
+# Project synthesis
+*/*.runs/synth*/*.xml
+*/*.runs/synth*/*.txt
+*/*.runs/synth*/*.sh
+*/*.runs/synth*/*.tcl
+*/*.runs/synth*/*.bat
+*/*.runs/synth*/*.xdc
+!*/*.runs/synth*/*utilization*.rpt
+
+*.runs/synth*/*.xml
+*.runs/synth*/*.txt
+*.runs/synth*/*.sh
+*.runs/synth*/*.tcl
+*.runs/synth*/*.bat
+*.runs/synth*/*.xdc
+!*.runs/synth*/*utilization*.rpt
+
+# Project implementation
+*/*.runs/impl*/*.xml
+*/*.runs/impl*/*.html
+*/*.runs/impl*/*.txt
+*/*.runs/impl*/*.sh
+*/*.runs/impl*/*.tcl
+*/*.runs/impl*/*.bat
+!*/*.runs/impl*/*utilization*.rpt
+
+*.runs/impl*/*.xml
+*.runs/impl*/*.html
+*.runs/impl*/*.txt
+*.runs/impl*/*.sh
+*.runs/impl*/*.tcl
+*.runs/impl*/*.bat
+!*.runs/impl*/*utilization*.rpt
+
+# Block design
+*/*/bd/*/hdl
+*/*/*/bd/*/hdl
+
+*/*/bd/*/*.xdc
+*/*/*/bd/*/*.xdc
+
+*/*/bd/*/ip/*/*.xdc
+*/*/*/bd/*/ip/*/*.xdc
+
+*/*/bd/*/ip/*/*
+*/*/*/bd/*/ip/*/*
+
+*/*/bd/*/ip/*/*.vhd
+*/*/*/bd/*/ip/*/*.vhd
+
+*/*/bd/*/ip/*/*.xml
+*/*/*/bd/*/ip/*/*.xml
+
+*.vho
+*.html
+*/*/bd/*/ip/*/*.tcl
+*/*/*/bd/*/ip/*/*.tcl
+hw_handoff
+ipshared
+
