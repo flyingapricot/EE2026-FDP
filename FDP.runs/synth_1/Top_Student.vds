@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Mar  8 04:25:58 2025
-# Process ID: 6452
-# Current directory: C:/Users/neera/Desktop/FDP/FDP.runs/synth_1
+# Start of session at: Sat Mar  8 20:18:13 2025
+# Process ID: 25828
+# Current directory: C:/Users/neera/Documents/EE2026-FDP/FDP.runs/synth_1
 # Command line: vivado.exe -log Top_Student.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
-# Log file: C:/Users/neera/Desktop/FDP/FDP.runs/synth_1/Top_Student.vds
-# Journal file: C:/Users/neera/Desktop/FDP/FDP.runs/synth_1\vivado.jou
+# Log file: C:/Users/neera/Documents/EE2026-FDP/FDP.runs/synth_1/Top_Student.vds
+# Journal file: C:/Users/neera/Documents/EE2026-FDP/FDP.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Student.tcl -notrace
 Command: synth_design -top Top_Student -part xc7a35tcpg236-1
@@ -15,48 +15,66 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23124 
+INFO: Helper process launched with PID 4648 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.992 . Memory (MB): peak = 356.590 ; gain = 100.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.990 . Memory (MB): peak = 356.641 ; gain = 99.609
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:153]
-INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:13]
-INFO: [Synth 8-6157] synthesizing module 'selectTask' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:139]
-INFO: [Synth 8-6155] done synthesizing module 'selectTask' (2#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:139]
-INFO: [Synth 8-6157] synthesizing module 'selectedFrequency' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:117]
-INFO: [Synth 8-6155] done synthesizing module 'selectedFrequency' (3#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:117]
-INFO: [Synth 8-6157] synthesizing module 'oled_14' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'oled_14' (4#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:25]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-INFO: [Synth 8-6157] synthesizing module 'subtaskA' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:331]
-WARNING: [Synth 8-6104] Input port 'oled_data' has an internal driver [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:348]
-WARNING: [Synth 8-6104] Input port 'pixelIndex' has an internal driver [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:351]
-WARNING: [Synth 8-5788] Register debounce_on_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:385]
-WARNING: [Synth 8-5788] Register center_pressed_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:387]
-WARNING: [Synth 8-5788] Register up_pressed_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:391]
-WARNING: [Synth 8-5788] Register down_pressed_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:395]
-WARNING: [Synth 8-5788] Register center_prev_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:385]
-WARNING: [Synth 8-5788] Register up_prev_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:389]
-WARNING: [Synth 8-5788] Register down_prev_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:393]
-WARNING: [Synth 8-5788] Register debounce_counter_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:405]
-WARNING: [Synth 8-3848] Net pixel_index in module/entity subtaskA does not have driver. [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:350]
-INFO: [Synth 8-6155] done synthesizing module 'subtaskA' (5#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:331]
-INFO: [Synth 8-6157] synthesizing module 'basic_task_D' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:504]
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:153]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:13]
+INFO: [Synth 8-6157] synthesizing module 'selectTask' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'selectTask' (2#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:139]
+INFO: [Synth 8-6157] synthesizing module 'selectedFrequency' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'selectedFrequency' (3#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:117]
+INFO: [Synth 8-6157] synthesizing module 'oled_14' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'oled_14' (4#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:25]
+INFO: [Synth 8-6157] synthesizing module 'subtaskA' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:336]
+WARNING: [Synth 8-6104] Input port 'pixelIndex' has an internal driver [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:354]
+WARNING: [Synth 8-5788] Register debounce_on_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:388]
+WARNING: [Synth 8-5788] Register center_pressed_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:390]
+WARNING: [Synth 8-5788] Register up_pressed_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:394]
+WARNING: [Synth 8-5788] Register down_pressed_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:398]
+WARNING: [Synth 8-5788] Register center_prev_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:388]
+WARNING: [Synth 8-5788] Register up_prev_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:392]
+WARNING: [Synth 8-5788] Register down_prev_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:396]
+WARNING: [Synth 8-5788] Register debounce_counter_reg in module subtaskA is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:408]
+WARNING: [Synth 8-3848] Net pixel_index in module/entity subtaskA does not have driver. [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:353]
+INFO: [Synth 8-6155] done synthesizing module 'subtaskA' (5#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:336]
+INFO: [Synth 8-6157] synthesizing module 'basic_task_c' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/basic_task_c.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/debouncer.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (6#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/debouncer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake0' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake0.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snake0' (7#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake0.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake1' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snake1' (8#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake2' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snake2' (9#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake3' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snake3' (10#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake4' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake4.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snake4' (11#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake4.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake5' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake5.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snake5' (12#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake5.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake6' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake6.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'snake6' (13#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake6.v:3]
+INFO: [Synth 8-6157] synthesizing module 'snake7' [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake7.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'snake7' (14#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake7.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'basic_task_c' (15#1) [C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/basic_task_c.v:3]
+INFO: [Synth 8-6157] synthesizing module 'basic_task_D' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:507]
 	Parameter SCREEN_WIDTH bound to: 96 - type: integer 
 	Parameter SCREEN_HEIGHT bound to: 64 - type: integer 
 	Parameter GREEN_SQUARE_SIZE bound to: 10 - type: integer 
 	Parameter RED_SQUARE_SIZE bound to: 30 - type: integer 
 	Parameter MOVEMENT_SPEED bound to: 30 - type: integer 
 	Parameter CLK_DIV bound to: 3333333 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:573]
-WARNING: [Synth 8-5788] Register btnR_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:560]
-WARNING: [Synth 8-5788] Register btnL_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:561]
-WARNING: [Synth 8-5788] Register btnU_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:562]
-WARNING: [Synth 8-5788] Register btnD_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:563]
-WARNING: [Synth 8-3848] Net JB in module/entity basic_task_D does not have driver. [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:507]
-INFO: [Synth 8-6155] done synthesizing module 'basic_task_D' (6#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:504]
-INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:576]
+WARNING: [Synth 8-5788] Register btnR_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:563]
+WARNING: [Synth 8-5788] Register btnL_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:564]
+WARNING: [Synth 8-5788] Register btnU_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:565]
+WARNING: [Synth 8-5788] Register btnD_last_reg in module basic_task_D is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:566]
+WARNING: [Synth 8-3848] Net JB in module/entity basic_task_D does not have driver. [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:510]
+INFO: [Synth 8-6155] done synthesizing module 'basic_task_D' (16#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:507]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
 	Parameter PixelCount bound to: 6144 - type: integer 
@@ -107,11 +125,11 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/neera/Desktop/
 	Parameter SendPixel bound to: 5'b10000 
 	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
 	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
-INFO: [Synth 8-226] default block is never used [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
-WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (7#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
-INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:56]
+INFO: [Synth 8-226] default block is never used [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:198]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:346]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (17#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/imports/Desktop/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:56]
 	Parameter SEG_0 bound to: 7'b1000000 
 	Parameter SEG_1 bound to: 7'b1111001 
 	Parameter SEG_2 bound to: 7'b0100100 
@@ -122,9 +140,8 @@ INFO: [Synth 8-6157] synthesizing module 'seven_seg_display' [C:/Users/neera/Des
 	Parameter SEG_7 bound to: 7'b1111000 
 	Parameter SEG_8 bound to: 7'b0000000 
 	Parameter SEG_9 bound to: 7'b0010000 
-INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (8#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:56]
-WARNING: [Synth 8-3848] Net oled_data_a in module/entity Top_Student does not have driver. [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:201]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (9#1) [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_display' (18#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (19#1) [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:153]
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port JB[7]
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port JB[6]
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port JB[5]
@@ -135,8 +152,9 @@ WARNING: [Synth 8-3331] design basic_task_D has unconnected port JB[1]
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port JB[0]
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port PS2Clk
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port PS2Data
+WARNING: [Synth 8-3331] design snake0 has unconnected port clock_45Hz
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 411.434 ; gain = 154.844
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 411.543 ; gain = 154.512
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -145,75 +163,78 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[15] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[14] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[13] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[12] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[11] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[10] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[9] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[8] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[7] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[6] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[5] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[4] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[3] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[2] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[1] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
-WARNING: [Synth 8-3295] tying undriven pin SubTaskA:oled_data[0] to constant 0 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:224]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 411.434 ; gain = 154.844
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 411.543 ; gain = 154.512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 411.434 ; gain = 154.844
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 411.543 ; gain = 154.512
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/neera/Desktop/FDP/FDP.srcs/constrs_1/new/my_baysys3_constraints.xdc]
-Finished Parsing XDC File [C:/Users/neera/Desktop/FDP/FDP.srcs/constrs_1/new/my_baysys3_constraints.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/neera/Desktop/FDP/FDP.srcs/constrs_1/new/my_baysys3_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Parsing XDC File [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/constrs_1/new/my_baysys3_constraints.xdc]
+Finished Parsing XDC File [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/constrs_1/new/my_baysys3_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/constrs_1/new/my_baysys3_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 754.090 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 757.195 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 754.090 ; gain = 497.500
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 757.195 ; gain = 500.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 754.090 ; gain = 497.500
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 757.195 ; gain = 500.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 754.090 ; gain = 497.500
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 757.195 ; gain = 500.164
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "startCircle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "center_pressed" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "center_pressed" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "debounce_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "OLED_DATA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "circlePresentFlag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:573]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:573]
+INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "btn_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'basic_task_c'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:576]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:576]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                              000 |                              000
+                 iSTATE6 |                              001 |                              001
+                  iSTATE |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+                 iSTATE3 |                              110 |                              110
+                 iSTATE4 |                              111 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'basic_task_c'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -252,7 +273,7 @@ INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 754.090 ; gain = 497.500
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 757.195 ; gain = 500.164
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -268,48 +289,51 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit       Adders := 3     
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 2     
-	   2 Input      7 Bit       Adders := 2     
-	   2 Input      6 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 5     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	               40 Bit    Registers := 1     
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 2     
+	               16 Bit    Registers := 11    
 	                8 Bit    Registers := 1     
-	                7 Bit    Registers := 2     
+	                7 Bit    Registers := 8     
 	                6 Bit    Registers := 4     
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 22    
+	                1 Bit    Registers := 41    
 +---Multipliers : 
-	                32x32  Multipliers := 4     
+	                32x32  Multipliers := 2     
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
 	  32 Input     32 Bit        Muxes := 1     
 	   2 Input     32 Bit        Muxes := 2     
 	  32 Input     20 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 2     
 	   3 Input     16 Bit        Muxes := 3     
-	   2 Input     16 Bit        Muxes := 9     
 	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
 	   2 Input      8 Bit        Muxes := 1     
 	   3 Input      7 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 5     
 	   4 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 2     
 	  32 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 1     
 	   3 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
 	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
 	   4 Input      3 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 2     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 37    
+	   2 Input      1 Bit        Muxes := 33    
 	   4 Input      1 Bit        Muxes := 2     
-	   3 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 5     
 	   5 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -325,7 +349,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
 	   3 Input     16 Bit        Muxes := 1     
 Module clk_div 
 Detailed RTL Component Info : 
@@ -355,21 +379,107 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 3     
 	   2 Input      8 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
 +---Registers : 
 	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
 	                6 Bit    Registers := 2     
 	                1 Bit    Registers := 8     
 +---Multipliers : 
-	                32x32  Multipliers := 4     
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module snake0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module snake1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module snake2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module snake3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module snake4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module snake5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+Module snake6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module snake7 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	   3 Input     16 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 7     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 24    
-	   3 Input      1 Bit        Muxes := 1     
+Module basic_task_c 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 7     
+	   8 Input      1 Bit        Muxes := 5     
 Module basic_task_D 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -444,42 +554,34 @@ INFO: [Synth 8-5545] ROM "Clock_5_Hz/my_clk0" won't be mapped to RAM because add
 INFO: [Synth 8-5545] ROM "Clock_10_Hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Clock_1_Hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Clock_8_Hz/my_clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "center_pressed" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "center_pressed" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "startCircle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "OLED_DATA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "circlePresentFlag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:462]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:462]
-INFO: [Synth 8-5545] ROM "center_pressed" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "center_pressed" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "startCircle" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "OLED_DATA" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "circlePresentFlag" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: Generating DSP OLED_DATA3, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
-DSP Report: operator OLED_DATA3 is absorbed into DSP OLED_DATA3.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:465]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:465]
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+INFO: [Synth 8-5546] ROM "db/count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "db/btn_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
@@ -494,57 +596,131 @@ WARNING: [Synth 8-3331] design basic_task_D has unconnected port JB[0]
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port PS2Clk
 WARNING: [Synth 8-3331] design basic_task_D has unconnected port PS2Data
 WARNING: [Synth 8-3331] design Top_Student has unconnected port JB[2]
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[0]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[0]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[1]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[1]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[2]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[2]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[3]' (FD) to 'square_movement/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[0]' (FDRE) to 'part_c/stage7/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[0]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[0]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[0]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[0]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[0]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[0]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[0]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[0]' (FD) to 'SubTaskA/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[0]' (FD) to 'square_movement/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[1]' (FDRE) to 'part_c/stage7/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[1]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[1]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[1]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[1]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[1]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[1]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[1]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[1]' (FD) to 'SubTaskA/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[1]' (FD) to 'square_movement/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[2]' (FDRE) to 'part_c/stage7/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[2]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[2]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[2]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[2]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[2]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[2]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[2]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[2]' (FD) to 'SubTaskA/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[2]' (FD) to 'square_movement/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[3]' (FDRE) to 'part_c/stage7/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[3]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[3]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[3]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[3]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[3]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[3]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[3]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[3]' (FD) to 'SubTaskA/oled_data_reg[4]'
 INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[3]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[4]' (FD) to 'square_movement/oled_data_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\square_movement/oled_data_reg[4] )
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[5]' (FD) to 'SubTaskA/OLED_DATA_reg[6]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[4]' (FDRE) to 'part_c/stage7/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[4]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[4]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[4]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[4]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[4]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[4]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[4]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (SubTaskA/\oled_data_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (square_movement/\oled_data_reg[4] )
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[5]' (FDRE) to 'part_c/stage7/oled_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[5]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[5]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[5]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[5]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[5]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[5]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[5]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[5]' (FD) to 'SubTaskA/oled_data_reg[6]'
 INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[5]' (FD) to 'square_movement/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[6]' (FD) to 'SubTaskA/OLED_DATA_reg[7]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[6]' (FDRE) to 'part_c/stage7/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[6]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[6]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[6]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[6]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[6]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[6]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[6]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[6]' (FD) to 'SubTaskA/oled_data_reg[7]'
 INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[6]' (FD) to 'square_movement/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[7]' (FD) to 'SubTaskA/OLED_DATA_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[7]' (FDSE) to 'part_c/stage7/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[7]' (FDS) to 'part_c/stage6/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[7]' (FDS) to 'part_c/stage5/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[7]' (FDS) to 'part_c/stage4/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[7]' (FDS) to 'part_c/stage3/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[7]' (FDS) to 'part_c/stage2/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[7]' (FDS) to 'part_c/stage1/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[7]' (FDS) to 'part_c/square/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[7]' (FD) to 'SubTaskA/oled_data_reg[8]'
 INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[7]' (FD) to 'square_movement/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[8]' (FD) to 'SubTaskA/OLED_DATA_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[8]' (FDSE) to 'part_c/stage7/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[8]' (FDS) to 'part_c/stage6/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[8]' (FDS) to 'part_c/stage5/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[8]' (FDS) to 'part_c/stage4/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[8]' (FDS) to 'part_c/stage3/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[8]' (FDS) to 'part_c/stage2/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[8]' (FDS) to 'part_c/stage1/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'part_c/square/oled_data_reg[8]' (FDS) to 'part_c/square/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[8]' (FD) to 'SubTaskA/oled_data_reg[9]'
 INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[8]' (FD) to 'square_movement/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[9]' (FD) to 'SubTaskA/OLED_DATA_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (part_c/\stage7/oled_data_reg[9] )
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[9]' (FDR) to 'part_c/stage5/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[9]' (FDR) to 'part_c/stage3/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[9]' (FDR) to 'part_c/stage3/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage3/oled_data_reg[9]' (FDR) to 'part_c/stage1/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage2/oled_data_reg[9]' (FDR) to 'part_c/stage1/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage1/oled_data_reg[9]' (FDR) to 'part_c/square/oled_data_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (part_c/\square/oled_data_reg[9] )
+INFO: [Synth 8-3886] merging instance 'SubTaskA/oled_data_reg[9]' (FD) to 'SubTaskA/oled_data_reg[10]'
 INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[9]' (FD) to 'square_movement/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[11]' (FD) to 'SubTaskA/OLED_DATA_reg[12]'
-INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[11]' (FD) to 'square_movement/oled_data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[12]' (FD) to 'SubTaskA/OLED_DATA_reg[13]'
-INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[12]' (FD) to 'square_movement/oled_data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[13]' (FD) to 'SubTaskA/OLED_DATA_reg[14]'
-INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[13]' (FD) to 'square_movement/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'SubTaskA/OLED_DATA_reg[14]' (FD) to 'SubTaskA/OLED_DATA_reg[15]'
-INFO: [Synth 8-3886] merging instance 'square_movement/oled_data_reg[14]' (FD) to 'square_movement/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'ssd/seg_reg[0]' (FD) to 'ssd/seg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage7/oled_data_reg[10]' (FDSE) to 'part_c/stage7/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage6/oled_data_reg[10]' (FDS) to 'part_c/stage6/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage5/oled_data_reg[10]' (FDS) to 'part_c/stage5/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'part_c/stage4/oled_data_reg[10]' (FDS) to 'part_c/stage4/oled_data_reg[11]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (part_c/\stage1/box1_ymax_reg[6] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssd/seg_reg[2] )
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ssd/seg_reg[4] )
-WARNING: [Synth 8-3332] Sequential element (SubTaskA/circlePresentFlag_reg) is unused and will be removed from module Top_Student.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'SubTaskA/circlePresentFlag_reg/Q' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:379]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:379]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/neera/Desktop/FDP/FDP.srcs/sources_1/new/Top_Student.v:379]
-WARNING: [Synth 8-3332] Sequential element (SubTaskA/circlePresentFlag_reg__0) is unused and will be removed from module Top_Student.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (part_c/\oled_data_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (circlePresentFlag_reg) is unused and will be removed from module subtaskA.
+WARNING: [Synth 8-3332] Sequential element (circlePresentFlag_reg__0) is unused and will be removed from module subtaskA.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'SubTaskA/circlePresentFlag_reg__0/Q' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:382]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:382]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/neera/Documents/EE2026-FDP/FDP.srcs/sources_1/new/Top_Student.v:382]
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[4]) is unused and will be removed from module subtaskA.
+WARNING: [Synth 8-3332] Sequential element (stage1/box1_ymax_reg[6]) is unused and will be removed from module basic_task_c.
+WARNING: [Synth 8-3332] Sequential element (stage7/oled_data_reg[9]) is unused and will be removed from module basic_task_c.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module basic_task_c.
+WARNING: [Synth 8-3332] Sequential element (square/oled_data_reg[9]) is unused and will be removed from module basic_task_c.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[4]) is unused and will be removed from module basic_task_D.
 WARNING: [Synth 8-3332] Sequential element (ssd/seg_reg[4]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (ssd/seg_reg[2]) is unused and will be removed from module Top_Student.
-WARNING: [Synth 8-3332] Sequential element (square_movement/oled_data_reg[4]) is unused and will be removed from module Top_Student.
-INFO: [Synth 8-3886] merging instance 'ssd/an_reg[2]' (FD) to 'ssd/dp_reg'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[24]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[28]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[25]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[30]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[26]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[23]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[29]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3886] merging instance 'i_4/square_movement/counter_reg[27]' (FDC) to 'i_4/square_movement/counter_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_4/\square_movement/counter_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (square_movement/i_1/\counter_reg[27] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 754.090 ; gain = 497.500
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 757.195 ; gain = 500.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -578,13 +754,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 784.973 ; gain = 528.383
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 790.801 ; gain = 533.770
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 885.898 ; gain = 629.309
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 814.879 ; gain = 557.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -596,7 +772,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -616,13 +792,13 @@ Finished Flattening Before IO Insertion
 ---------------------------------------------------------------------------------
 Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6064] Net n_0_935 is driving 78 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
-INFO: [Synth 8-6064] Net \SubTaskA/OLED_DATA4 [31] is driving 70 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
+INFO: [Synth 8-6064] Net n_0_1307 is driving 78 big block pins (URAM, BRAM and DSP loads). Created 8 replicas of its driver. 
+INFO: [Synth 8-6064] Net \SubTaskA/oled_data4 [31] is driving 70 big block pins (URAM, BRAM and DSP loads). Created 7 replicas of its driver. 
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -635,7 +811,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -647,25 +823,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -682,51 +858,62 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     3|
-|2     |CARRY4  |   161|
+|2     |CARRY4  |   204|
 |3     |DSP48E1 |     6|
-|4     |LUT1    |    42|
-|5     |LUT2    |   275|
-|6     |LUT3    |   136|
-|7     |LUT4    |   139|
-|8     |LUT5    |   163|
-|9     |LUT6    |   239|
-|10    |MUXF7   |     1|
-|11    |FDCE    |    41|
+|4     |LUT1    |    41|
+|5     |LUT2    |   338|
+|6     |LUT3    |   185|
+|7     |LUT4    |   169|
+|8     |LUT5    |   168|
+|9     |LUT6    |   400|
+|10    |MUXF7   |     2|
+|11    |FDCE    |    60|
 |12    |FDE_1   |    32|
-|13    |FDPE    |    11|
-|14    |FDRE    |   352|
-|15    |IBUF    |    22|
-|16    |OBUF    |    35|
-|17    |OBUFT   |     1|
+|13    |FDPE    |    29|
+|14    |FDRE    |   466|
+|15    |FDSE    |     3|
+|16    |IBUF    |    22|
+|17    |OBUF    |    35|
+|18    |OBUFT   |     1|
 +------+--------+------+
 
 Report Instance Areas: 
 +------+-------------------+------------------+------+
 |      |Instance           |Module            |Cells |
 +------+-------------------+------------------+------+
-|1     |top                |                  |  1659|
-|2     |  Clock_1_kHz      |clk_div           |    64|
+|1     |top                |                  |  2164|
+|2     |  Clock_1_kHz      |clk_div           |    63|
 |3     |  Clock_25_MHz     |clk_div_0         |    63|
 |4     |  Clock_6_25_MHz   |clk_div_1         |    64|
-|5     |  SubTaskA         |subtaskA          |   314|
-|6     |  display_14       |oled_14           |    34|
-|7     |  oled             |Oled_Display      |   591|
-|8     |  select_frequency |selectedFrequency |   237|
-|9     |    Clock_10_Hz    |clk_div_2         |    61|
-|10    |    Clock_1_Hz     |clk_div_3         |    57|
-|11    |    Clock_5_Hz     |clk_div_4         |    58|
-|12    |    Clock_8_Hz     |clk_div_5         |    61|
-|13    |  square_movement  |basic_task_D      |   193|
-|14    |  ssd              |seven_seg_display |    18|
+|5     |  SubTaskA         |subtaskA          |   271|
+|6     |  display_14       |oled_14           |     4|
+|7     |  oled             |Oled_Display      |   841|
+|8     |  part_c           |basic_task_c      |   340|
+|9     |    db             |debouncer         |    37|
+|10    |    square         |snake0            |     1|
+|11    |    stage1         |snake1            |    27|
+|12    |    stage2         |snake2            |    35|
+|13    |    stage3         |snake3            |    27|
+|14    |    stage4         |snake4            |    36|
+|15    |    stage5         |snake5            |    22|
+|16    |    stage6         |snake6            |    34|
+|17    |    stage7         |snake7            |    14|
+|18    |  select_frequency |selectedFrequency |   229|
+|19    |    Clock_10_Hz    |clk_div_2         |    65|
+|20    |    Clock_1_Hz     |clk_div_3         |    54|
+|21    |    Clock_5_Hz     |clk_div_4         |    55|
+|22    |    Clock_8_Hz     |clk_div_5         |    55|
+|23    |  square_movement  |basic_task_D      |   164|
+|24    |  ssd              |seven_seg_display |    18|
 +------+-------------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 3 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 893.027 ; gain = 293.781
-Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 893.027 ; gain = 636.438
+Synthesis finished with 0 errors, 3 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 860.254 ; gain = 257.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 860.254 ; gain = 603.223
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 222 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 266 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -735,11 +922,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-112 Infos, 61 Warnings, 3 Critical Warnings and 0 Errors encountered.
+199 Infos, 48 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 893.027 ; gain = 649.309
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 860.254 ; gain = 616.051
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/neera/Desktop/FDP/FDP.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/neera/Documents/EE2026-FDP/FDP.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 893.027 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Mar  8 04:26:22 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 860.254 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar  8 20:18:37 2025...

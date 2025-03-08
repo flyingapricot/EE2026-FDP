@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Mar  8 20:09:51 2025
+# Process ID: 21208
+# Current directory: C:/Users/neera/Documents/EE2026-FDP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15744 C:\Users\neera\Documents\EE2026-FDP\FDP.xpr
+# Log file: C:/Users/neera/Documents/EE2026-FDP/vivado.log
+# Journal file: C:/Users/neera/Documents/EE2026-FDP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/neera/Documents/EE2026-FDP/FDP.xpr
+update_compile_order -fileset sources_1
+update_files -from_files {{C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake4.v}} -to_files {{C:/Users/neera/OneDrive - National University of Singapore/EE2026/FDP/FDP.srcs/sources_1/new/snake4.v}} -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files {{C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake5.v}} -to_files {{C:/Users/neera/OneDrive - National University of Singapore/EE2026/FDP/FDP.srcs/sources_1/new/snake5.v}} -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files {{C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake6.v}} -to_files {{C:/Users/neera/OneDrive - National University of Singapore/EE2026/FDP/FDP.srcs/sources_1/new/snake6.v}} -filesets [get_filesets *]
+update_compile_order -fileset sources_1
+update_files -from_files {{C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake7.v}} -to_files {{C:/Users/neera/OneDrive - National University of Singapore/EE2026/FDP/FDP.srcs/sources_1/new/snake7.v}} -filesets [get_filesets *]
+update_files -from_files {{C:/Users/neera/Desktop/FDP Git/FDP2/EE2026-FDP/FDP.srcs/sources_1/new/snake7.v}} -to_files {{C:/Users/neera/OneDrive - National University of Singapore/EE2026/FDP/FDP.srcs/sources_1/new/snake7.v}} -filesets [get_filesets *]

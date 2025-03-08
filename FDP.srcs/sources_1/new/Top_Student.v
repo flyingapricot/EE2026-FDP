@@ -335,7 +335,7 @@ endmodule
 
 module subtaskA(input clk25m,
                 input clk1000,
-                input [15:0] oled_data,
+                output reg[15:0] oled_data,
                 input[12:0] pixelIndex,
                 input CENTER_BTN,
                 input UP_BTN,
@@ -349,8 +349,6 @@ module subtaskA(input clk25m,
     assign x = pixelIndex % 96;
     assign y = pixelIndex / 96;
     
-    reg[15:0] OLED_DATA;
-    assign oled_data = OLED_DATA;
     
     reg [12:0] pixel_index;
     assign pixelIndex = pixel_index;
@@ -437,43 +435,43 @@ module subtaskA(input clk25m,
     always @(posedge clk25m) begin
     
         if (subtask_reset == 1) begin
-            OLED_DATA <= 16'b00000_000000_00000;
+            oled_data <= 16'b00000_000000_00000;
         end
         else begin
             //Assign the each pixel of framebuffer to the current pixelIndex
             if(x >= 0 && x <= 93 && y >= 2 && y <= 5) begin
                 //Top Border
-                OLED_DATA = RED_COLOUR;
+                oled_data <= RED_COLOUR;
             end
             
             else if(x >= 0 && x <= 93 && y >= 59 && y <= 61) begin
                 //Bottom Border
-                OLED_DATA = RED_COLOUR;
+                oled_data <= RED_COLOUR;
             end
             
             else if(x >= 0 && x <= 3 && y >= 2 && y <= 61) begin
                 //Left Border
-                OLED_DATA = RED_COLOUR;
+                oled_data <= RED_COLOUR;
             end
             
             else if(x >= 90 && x <= 93 && y >= 2 && y <= 61) begin
                 //Right Border
-                OLED_DATA = RED_COLOUR;
+                oled_data <= RED_COLOUR;
             end
             
             else if (startCircle == 1 && circlePresentFlag == 0) begin
                 //initalise the display
                             
                  if ( ((x - 47) * (x - 47)) + ((y - 32) * (y - 32)) <= ( (innerDiameter/2) * (innerDiameter/2) )) begin
-                     OLED_DATA = 16'b00000_000000_00000;
+                     oled_data <= 16'b00000_000000_00000;
                  end
                  else if ( ((x - 47) * (x - 47)) + ((y - 32) * (y - 32)) >= ( (innerDiameter/2) * (innerDiameter/2) ) && 
                            ((x - 47) * (x - 47)) + ((y - 32) * (y - 32)) <= ( (outerDiameter/2) * (outerDiameter/2) ) ) begin
-                     OLED_DATA = GREEN_COLOUR;
+                     oled_data <= GREEN_COLOUR;
                  end
                  
                  else begin
-                     OLED_DATA = 16'b00000_000000_00000;
+                     oled_data <= 16'b00000_000000_00000;
                  end
                  
                  circlePresentFlag <= 1;
@@ -483,21 +481,21 @@ module subtaskA(input clk25m,
             else if(circlePresentFlag == 1) begin
                 
                 if ( ((x - 47) * (x - 47)) + ((y - 32) * (y - 32)) <= ( (innerDiameter/2) * (innerDiameter/2) )) begin
-                    OLED_DATA = 16'b00000_000000_00000;
+                    oled_data <= 16'b00000_000000_00000;
                 end
                 
                 else if ( ((x - 47) * (x - 47)) + ((y - 32) * (y - 32)) >= ( (innerDiameter/2) * (innerDiameter/2) ) && 
                           ((x - 47) * (x - 47)) + ((y - 32) * (y - 32)) <= ( (outerDiameter/2) * (outerDiameter/2) ) ) begin
-                    OLED_DATA = GREEN_COLOUR;
+                    oled_data <= GREEN_COLOUR;
                 end
                 
                 else begin
-                    OLED_DATA = 16'b00000_000000_00000;
+                    oled_data <= 16'b00000_000000_00000;
                 end
             end
             
             else begin
-                OLED_DATA = 16'b00000_000000_00000;
+                oled_data <= 16'b00000_000000_00000;
             end
         end
         
