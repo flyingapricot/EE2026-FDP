@@ -199,6 +199,7 @@ module Top_Student (input clk,
     wire[15:0] oled_data;
     
     wire[15:0] oled_data_a;
+    wire[15:0] oled_data_c;
     wire[15:0] oled_data_d;
     wire[15:0] oled_data_init;
     
@@ -230,6 +231,9 @@ module Top_Student (input clk,
                       btnD,
                       subtask_reset);
 
+    // Instantiate subtaskC
+    basic_task_c part_c (clk6p25m, clk25m, clk, pixel_index, btnC, subtask_reset, oled_data_c);
+
 
     // Instantiate square_movement module
     basic_task_D square_movement (  .clk(clk),
@@ -247,6 +251,7 @@ module Top_Student (input clk,
                                   );
 
     assign oled_data = (taskSelect == 0) ? oled_data_a : 
+                       (taskSelect == 2) ? oled_data_c :
                        (taskSelect == 3) ? oled_data_d : 
                        oled_data_init;
                        
